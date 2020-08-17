@@ -28,6 +28,9 @@ pip install tscribe
 | 0:00:05 | spk_1   | Yep.        |
 | 0:00:06 | spk_0   | Great.      |
 
+# keyword_timestamp.json example:
+
+{"Thank": "03:04", "you": "03:04", "for": "02:59", "calling": "00:07",}
 
 # Usage
 
@@ -38,10 +41,10 @@ Simply `import tscribe` and point `tscribe.write(...)` at your `.json` file.
 ```python
 import tscribe
 
-tscribe.write("output.json")
+tscribe.write("output.json", format="csv")
 ```
 ```
-output.docx written in x seconds.
+output.csv written in x seconds.
 ```
 
 ## Output formats
